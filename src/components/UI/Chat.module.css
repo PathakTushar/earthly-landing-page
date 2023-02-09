@@ -1,0 +1,32 @@
+.chat{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #15843C;
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 9999;
+}
+.chat:hover{
+    animation: rotation 1s ease-in-out forwards;
+}
+@keyframes rotation{
+    0%{
+        rotate: 720deg;
+    }
+    100%{
+      rotate: 0deg;
+    }
+  }
+
+@media (max-width:600px)
+{
+    .chat{
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+    }
+}
