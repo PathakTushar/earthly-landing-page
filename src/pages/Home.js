@@ -11,8 +11,6 @@ import MapAndJoin from "../components/banners/MapAndJoin";
 import Parallax from "../components/parallax/Parallax";
 import ParallaxSec from "../components/parallax/ParallaxSec";
 import Navbar from "../components/UI/Navbar"; 
-import SimpleDialogDemo from "../components/productOverlay/ProductOverlay";
-import Open from "../components/productOverlay/Open";
 const Home = () => {
   return (
     <div>

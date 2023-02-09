@@ -1,42 +1,91 @@
-
 .backdrop {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: 20;
+    z-index: 9999999999;
     background-color: rgba(0, 0, 0, 0.75);
 }
-
-.modal {
-    position: fixed;
-    top: 20vh;
-    left: 5%;
-    width: 100%;
+.productModalContainer {
+    position: fixed;    
+    margin: auto;
     background-color: white;
-    padding: 1rem;
     border-radius: 14px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    z-index: 30;
-    animation: slide-down 300ms ease-out forwards;
+    z-index: 9999999999999999999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 2rem;
+}
+.closeButton{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    background: transparent;
+}
+.modalImage img{
+    height: 500px;
+}
+.modalImage{
+    padding: 0 3rem;
+}
+.modalContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3rem;
+    height: 100%;
+    gap: 1rem;
+}
+.description{
+    font-size: 2rem;
+    margin: 0;
+    color: rgb(87, 87, 87);
+}
+.price{
+    font-size: 1.5rem;
+    margin: 0;
+    color: rgb(87, 87, 87);
+}
+.set,.quantity{
+    border-radius: 10px;
+    background-color: #e1e7e3;
+    height: 2rem;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
 }
 
-@media (min-width: 768px) {
-    .modal {
-        width: 40rem;
-        left: calc(50% - 20rem);
+@media (max-width: 1050px) {
+    .productModalContainer{
+        flex-direction: column;
+        top: 5vh;
     }
 }
-
-@keyframes slide-down {
-    from {
-        opacity: 0;
-        transform: translateY(-3rem);
+@media (max-width: 700px) {
+    .productModalContainer{
+        padding: 1rem;
     }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .modalImage img{
+        height: 300px;
+    }
+}
+@media (max-width: 500px) {
+    .modalImage{
+        padding: 0 1rem;
+    }
+    .modalImage img{
+        height: 200px;
+    }
+    .modalContent{
+        padding: 1rem;
     }
 }
