@@ -15,9 +15,7 @@ const MapAndJoin = () => {
           margin: 0,
           overflow: "hidden",
         }}
-        allowfullscreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
       <div className={classes.joinContainer}>
         <h1 data-aos="zoom-in" data-aos-duration="1500">Join the Club</h1>

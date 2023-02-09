@@ -57,22 +57,16 @@
     transform: rotate(0);
   }
 }
-.getInTouch {
-  border: 1px solid white;
-  border-radius: 20px;
-  /* width: 16%; */
-  transition: all 0.3s ease-in-out;
-}
+
 .navItem {
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
-.active {
+.navItem:hover {
   color: #dfb1bd;
 }
-.getInTouch:hover {
-  background: white;
-  color: green;
+.getInTouch{
+  border: none;
 }
 .cart {
   font-size: 2.5rem;
@@ -173,5 +167,15 @@
   }
   .header .menuIcon {
     display: none;
+  }
+  .getInTouch {
+    border: 1px solid white;
+    border-radius: 20px;
+    /* width: 16%; */
+    transition: all 0.3s ease-in-out;
+  }
+  .getInTouch:hover {
+    background: white;
+    color: green;
   }
 }

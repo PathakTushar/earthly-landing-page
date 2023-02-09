@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./Navbar.module.css";
-import { CiShoppingCart } from "react-icons/ci";
+import { BsCart } from "react-icons/bs";
 
 const rubicImage =
   "https://static.wixstatic.com/media/a3c153_b34adfbb2154432cb66b961db0c099b3~mv2.png/v1/fill/w_59,h_59,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3c153_b34adfbb2154432cb66b961db0c099b3~mv2.png";
@@ -30,7 +30,7 @@ const Responsive = () => {
         <img src={!hover ? rubicImage : hoverRubicImage} alt="rubicCube" />
       </div>
       <input className={classes.menuBtn} type="checkbox" id="menu-btn" />
-      <label className={classes.menuIcon} for="menu-btn">
+      <label className={classes.menuIcon} htmlFor="menu-btn">
         <span className={classes.navicon}></span>
       </label>
       <ul className={classes.menu}>
@@ -52,7 +52,7 @@ const Responsive = () => {
         <li>
           <Link to={{ pathname: "/" }}>
             <p className={`${classes.navItem} ${classes.cart}`}>
-              <CiShoppingCart />
+              <BsCart />
             </p>
           </Link>
         </li>
