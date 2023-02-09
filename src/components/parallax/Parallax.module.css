@@ -15,9 +15,10 @@
   padding-bottom: 50px;
   padding-top: 50px;
   overflow: hidden;
+  width: 100vw;
 }
 .ParallaxVideo video {
-  min-width: 100vw;
+  width: 100vw;
   position: fixed;
   top: 0;
   z-index: -999;

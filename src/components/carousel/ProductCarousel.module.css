@@ -13,3 +13,9 @@
     width: 95%;
     margin: 0 auto;
 }
+@media(max-height:850px)
+{
+    .productCarousel{
+        height: 60vh;
+    }
+}

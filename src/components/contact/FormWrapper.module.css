@@ -57,5 +57,9 @@
 
     .formContainer{
         box-shadow: -3px 5px 15px rgb(104, 103, 103);
+        margin: 0;
+        padding: 1rem;
+        /* width: 80%; */
+        /* width: 98vw; */
     }
 }

@@ -53,6 +53,15 @@
     max-width: 60%;
     line-height: 3rem;
 }
+@media(max-height:850px)
+{
+    .posterContainer{
+        height: 60vh;
+    }
+    .posterVideo{
+        height: 200%;
+    }
+}
 
 @media (max-width:1275px)
 {

@@ -3,7 +3,7 @@
   color: white;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 9999999;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -42,9 +42,11 @@
 .title p {
   margin-top: 0;
   padding-top: 0;
+  /* display: none; */
 }
 .rubicCube {
   cursor: pointer;
+  /* display: none; */
 }
 .rubicCube img {
   animation: rotation 1s ease-in-out forwards;
@@ -171,7 +173,6 @@
   .getInTouch {
     border: 1px solid white;
     border-radius: 20px;
-    /* width: 16%; */
     transition: all 0.3s ease-in-out;
   }
   .getInTouch:hover {

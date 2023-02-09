@@ -1,7 +1,7 @@
 .chat{
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 4vh;
+    right: 2vw;
     background-color: #15843C;
     padding: 1rem 2rem;
     border: none;
