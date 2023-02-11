@@ -16,7 +16,7 @@ const Home = () => {
     <div>
       <Navbar />
       <Chat />
-      {/* <HeroCarousel />
+      <HeroCarousel />
       <ProductCarousel />
       <Parallax />
       <About />
@@ -25,7 +25,7 @@ const Home = () => {
       <Contact />
       <ParallaxSec />
       <MapAndJoin />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };
