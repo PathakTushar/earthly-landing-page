@@ -19,12 +19,14 @@ const ProductModal = (props) => {
         <div className={classes.modalContent}>
           <p className={classes.description}>{props.description}</p>
           <p className={classes.price}>{props.price}</p>
-          <select className={classes.set} >
+          <label htmlFor="set">Set of</label>
+          <select className={classes.set} id='set'>
           {props.set.map((value) => (
               <option key={value}>{value}</option>
             ))}
           </select>
-          <input type="number" className={classes.quantity} placeholder='quantity'/>
+          <label htmlFor="quantity">Quantity</label>
+          <input type="number" className={classes.quantity} placeholder='quantity' id="quantity"/>
           <Button active={true}>Add to Cart</Button>
         </div>
       </div>
