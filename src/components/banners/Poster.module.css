@@ -37,14 +37,15 @@
 }
 .imageBox img{
     object-fit: contain;
+    height: 400px;
 }
-@keyframes pop{
+/* @keyframes pop{
 	0% { opacity: 0; }
 	5% { opacity: 0; transform: rotate(0deg) scale(0.10) skew(0deg) translate(0px);}
 	20% { opacity: 0.5; }
 	50% { opacity: 0.8; transform: translateY(0px); }
 	100% { opacity: 1; }
-}
+} */
 .textBox{
     display: flex;
     justify-content: center;
@@ -53,20 +54,15 @@
     max-width: 60%;
     line-height: 3rem;
 }
-@media(max-height:850px)
-{
-    .posterContainer{
-        height: 60vh;
-    }
-    .posterVideo{
-        height: 200%;
-    }
+
+.textBox p{
+    line-height: 2rem;
 }
 
 @media (max-width:1275px)
 {
     .imageBox img{
-        height: 400px;
+        height: 350px;
     }
     .textBox{
         max-width: 80%;
@@ -77,10 +73,10 @@
 }
 @media (max-width:1050px){
     .posterContainer{
-        height: 80vh;
+        height: 90vh;
     }
     .imageBox img{
-        height: 350px;
+        height: 300px;
     }
     .textBox{
         line-height: 2rem;
@@ -88,24 +84,36 @@
 }
 @media (max-width:925px){
     .posterContainer{
-        height: 70vh;
+        height: 80vh;
     }
     .imageBox img{
-        height: 300px;
+        height: 250px;
     }
     .posterContentContainer{
         width: 90%;
     }
+    .textBox p{
+        line-height: 1.5rem;
+    }
 }
+/* @media(max-height:850px)
+{
+    .posterContainer{
+        height: 60vh;
+    }
+    .posterVideo{
+        height: 200%;
+    }
+} */
 @media (max-width:775px){
     .textBox {
         max-width: 100%;
     }
     .posterContainer{
-        height: 70vh;
+        height: 80vh;
     }
     .imageBox img{
-        height: 250px;
+        height: 200px;
     }
     .posterContentContainer{
         width: 95%;

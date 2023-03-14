@@ -156,6 +156,9 @@
 /* 48em = 768px */
 
 @media (min-width: 850px) {
+  .header{
+    padding: 0;
+  }
   .header li {
     float: left;
   }
